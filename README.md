@@ -5,6 +5,14 @@ This project is a Personal Gardening Help System that acts as an inventory manag
 
 ![Hello 2022-12-09 02-59-01](https://user-images.githubusercontent.com/81552207/206688621-23ed53a2-cb89-4259-a5e8-c1f4a3c55727.gif)
 
+## Table of Contents
+
+- [Project Description](#project-description)
+- [Features](#features)
+- [Reason for Project](#reason-for-project)
+- [Installation Instructions](#installation-instructions)
+- [Interfaces](#interfaces)
+- [Future Development](#future-development)
 
 ## Features
 * Functional GUI
