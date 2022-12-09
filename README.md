@@ -41,7 +41,7 @@ I created this project as a fourth year university student to showcase my skills
     * Right click the .jar file in the file structure (V21_Project\V2_Project\demo\lib\mysql-connecter-java.8.0.28.jar) and click "Add as Library..."
     * In the IntelliJ taskbar, click Edit > Find > Replace in files > and replace "jdbc:mysql://localhost:3306/demo", "root", ""); with your MySQL root username and password.
 7. Run SeedBank.main();
-8. (OPTIONAL) To modify the layout or change elements of the UI, install [JavaFX](https://gluonhq.com/products/javafx/) and [SceneBuilder](https://gluonhq.com/products/scene-builder/), and use SceneBuilder to open and modify the .FXML files in the project folder.
+8. (*OPTIONAL*) To modify the layout or change elements of the UI, install [JavaFX](https://gluonhq.com/products/javafx/) and [SceneBuilder](https://gluonhq.com/products/scene-builder/), and use SceneBuilder to open and modify the .FXML files in the project folder.
 
 ## Interfaces
 After logging in, the user is presented with the main screen of the program. From here, the user can access the Seeds Inventory to add, update, and mark seeds as harvested or purchased, or navigate to other interfaces to add new seed entries, search existing entries, review their planting schedule, update their user settings, and create reports.
