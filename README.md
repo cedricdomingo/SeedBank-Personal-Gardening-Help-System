@@ -38,7 +38,6 @@ I created this project as a fourth year university student to showcase my skills
 4. In MySQL Workbench, click Server > Data Import > Import from Self-Contained File > and select the 'seedbank_db.sql' file uploaded with this project, and click Start Import.
 5. Clone this repository and open the project in an IDE (such as [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?fromIDE=)).
 6. To load the project in IntelliJ:
-    * Extract the 'V24_Project.zip' file
     * Open the project folder in IntelliJ and add any Maven Build scripts if prompted by the IDE
     * Right click the .jar file in the file structure (V21_Project\V2_Project\demo\lib\mysql-connecter-java.8.0.28.jar) and click "Add as Library..."
     * In the IntelliJ taskbar, click Edit > Find > Replace in files > and replace "jdbc:mysql://localhost:3306/demo", "root", ""); with your MySQL root username and password.
