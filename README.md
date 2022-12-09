@@ -29,7 +29,7 @@ This project is a Personal Gardening Help System that acts as an inventory manag
 * Marking of "planted" and "wasted" seeds and removal from inventory
 
 ## Reason for Project
-I created this project as a fourth year university student to showcase my skills in Java, JavaFX, and database management. It serves as a useful tool for managing a personal gardening inventory and keeping track of important information such as expiry dates and quantities.
+I created this project as a fourth year university student to showcase my skills in Java, database management, and designing and implementing graphical user interfaces. It serves as a useful tool for managing a personal gardening inventory and keeping track of important information such as expiry dates and quantities.
 
 ## Installation Instructions
 1. Install [Java](https://www.java.com/download/ie_manual.jsp) on your system.
