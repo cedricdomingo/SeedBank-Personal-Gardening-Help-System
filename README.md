@@ -1,4 +1,6 @@
 # SeedBank - Personal Gardening Help System
+![Slice 1 (2)](https://user-images.githubusercontent.com/81552207/206712277-7139cb80-b480-419a-98c1-86ecbff64f23.png)
+
 
 ## Project Description
 This project is a Personal Gardening Help System that acts as an inventory management system for seeds. It was created using Java, JavaFX, and SceneBuilder. The program connects to a MySQL database (hosted using XAMPP) to save and retrieve data. The SeedBank Personal Gardening Help System helps users manage their seed inventory, and automate their planting and harvest schedules. The system includes a functional graphical user interface (GUI), user authentication, and various features to help users manage their gardening activities.
