@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UserSettingsController">
+   <children>
+      <AnchorPane prefHeight="768.0" prefWidth="300.0">
+         <children>
+            <VBox layoutX="1.0" layoutY="102.0" prefHeight="306.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="sidebar_dashboard_img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_home.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="sidebar_seedEntry_img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_seedEntry.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="sidebar_search_img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_search.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="sidebar_plantingSchedule_img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_calendar.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="sidebar_userSettings_img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_user.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_reports.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <ImageView fx:id="sidebar_logo_img" fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SeedBankImages/sidebar_logo.png" />
+               </image>
+            </ImageView>
+            <VBox layoutY="408.0" prefHeight="360.0" prefWidth="300.0">
+               <children>
+                  <ImageView fx:id="sidebar_user_img" fitHeight="97.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_loggedIn.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="105.0" right="100.0" top="150.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="sidebar_loggedInAs" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="300.0" text="Logged in as">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sidebar_preferredAlias" alignment="CENTER" prefHeight="17.0" prefWidth="300.0" text="Preferred Alias">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sidebar_logout_btn" mnemonicParsing="false" onAction="#logoutButton" prefHeight="21.0" prefWidth="137.0" style="-fx-background-color: #00BFFF;" text="LOG OUT" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="sidebar_reports_img" layoutX="-1.0" layoutY="108.0" prefHeight="300.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="sidebar_dashboard_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Dashboard">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="sidebar_seedEntry_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToSeedEntry" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Seed Entry">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="sidebar_search_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToSearch" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Search">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="sidebar_plantingSchedule_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToPlantingSchedule" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Planting Schedule">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="sidebar_userSettings_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToUserSettings" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="User Settings">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="sidebar_reports_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToReports" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Reports">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" prefHeight="768.0" prefWidth="1066.0">
+         <children>
+            <AnchorPane fx:id="seedEntry_methodObtained" prefHeight="768.0" prefWidth="1066.0">
+               <children>
+                  <Label fx:id="userSettings_header" layoutX="54.0" layoutY="33.0" text="User Settings">
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userSettings_currentUsername" layoutX="54.0" layoutY="159.0" text="Current Username">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userSettings_newPassword" layoutX="54.0" layoutY="324.0" text="New Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userSettings_newPassword_textfield" layoutX="207.0" layoutY="322.0" prefHeight="25.0" prefWidth="325.0" />
+                  <Label fx:id="userSettings_newPreferredAlias" layoutX="54.0" layoutY="233.0" text="New Preferred Alias">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userSettings_newPreferredAlias_textfield" layoutX="207.0" layoutY="231.0" prefHeight="25.0" prefWidth="325.0" />
+                  <Label fx:id="userSettings_confirmPassword" layoutX="55.0" layoutY="358.0" text="Confirm Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userSettings_confirmPassword_textfield" layoutX="207.0" layoutY="356.0" prefHeight="25.0" prefWidth="325.0" />
+                  <Button fx:id="userSettings_update_btn" layoutX="207.0" layoutY="425.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="325.0" style="-fx-background-color: #00BFFF;" text="Update" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="userSettings_cancel_btn" layoutX="208.0" layoutY="464.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="325.0" style="-fx-background-color: #00BFFF;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="userSettings_passwordsDoNotMatch" layoutX="560.0" layoutY="358.0" text="Passwords do not match!" textFill="#ab0000">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userSettings_currentAlias" layoutX="54.0" layoutY="195.0" text="Current Alias">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userSettings_usernameAndAlias" layoutX="54.0" layoutY="113.0" text="Username &amp; Alias">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userSettings_password" layoutX="53.0" layoutY="282.0" text="Password">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userSettings_actualUsername" layoutX="208.0" layoutY="161.0" text="Current Username" />
+                  <Label fx:id="userSettings_actualAlias" layoutX="208.0" layoutY="196.0" text="Current Alias" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

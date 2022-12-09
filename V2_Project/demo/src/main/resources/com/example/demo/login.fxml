@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1367.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LoginController">
+   <left>
+      <AnchorPane fx:id="login_logo_img" prefHeight="768.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SeedBankImages/login_image.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="768.0" prefWidth="683.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="login_username" layoutX="124.0" layoutY="422.0" text="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="login_username_textfield" layoutX="207.0" layoutY="419.0" prefHeight="25.0" prefWidth="278.0" promptText="Username" />
+            <Label fx:id="login_password" layoutX="126.0" layoutY="463.0" text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="login_password_textfield" layoutX="208.0" layoutY="460.0" prefHeight="25.0" prefWidth="278.0" promptText="Password" />
+            <Button fx:id="login_login_btn" layoutX="209.0" layoutY="533.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="27.0" prefWidth="277.0" style="-fx-background-color: #00BFFF;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="login_register_btn" layoutX="208.0" layoutY="567.0" mnemonicParsing="false" onAction="#registerButton" prefHeight="27.0" prefWidth="278.0" style="-fx-background-color: #00BFFF;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="login_hello" layoutX="268.0" layoutY="307.0" text="Hello!">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="67.0" />
+               </font>
+            </Label>
+            <Label fx:id="login_pleaseLogIn" layoutX="202.0" layoutY="375.0" text="Please log-in or register to get started.">
+               <font>
+                  <Font name="Franklin Gothic Book" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="login_icon_img" fitHeight="267.0" fitWidth="267.0" layoutX="213.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="453.0" AnchorPane.leftAnchor="213.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="48.0">
+               <image>
+                  <Image url="@../../../SeedBankImages/login_circleIcon.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

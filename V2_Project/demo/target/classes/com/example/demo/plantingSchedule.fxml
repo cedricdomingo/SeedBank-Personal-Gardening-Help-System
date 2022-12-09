@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.PlantingScheduleController">
+   <children>
+      <AnchorPane prefHeight="768.0" prefWidth="300.0">
+         <children>
+            <VBox layoutX="1.0" layoutY="102.0" prefHeight="306.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="sidebar_dashboard_img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_home.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="sidebar_seedEntry_img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_seedEntry.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="sidebar_search_img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_search.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="sidebar_plantingSchedule_img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_calendar.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="sidebar_userSettings_img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_user.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_reports.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <ImageView fx:id="sidebar_logo_img" fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SeedBankImages/sidebar_logo.png" />
+               </image>
+            </ImageView>
+            <VBox layoutY="408.0" prefHeight="360.0" prefWidth="300.0">
+               <children>
+                  <ImageView fx:id="sidebar_user_img" fitHeight="97.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SeedBankImages/sidebar_loggedIn.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="105.0" right="100.0" top="150.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="sidebar_loggedInAs" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="300.0" text="Logged in as">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sidebar_preferredAlias" alignment="CENTER" prefHeight="17.0" prefWidth="300.0" text="Preferred Alias">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sidebar_logout_btn" mnemonicParsing="false" onAction="#logoutButton" prefHeight="21.0" prefWidth="137.0" style="-fx-background-color: #00BFFF;" text="LOG OUT" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="sidebar_reports_img" layoutX="-1.0" layoutY="108.0" prefHeight="300.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="sidebar_dashboard_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Dashboard">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="sidebar_seedEntry_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToSeedEntry" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Seed Entry">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="sidebar_search_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToSearch" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Search">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="sidebar_plantingSchedule_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToPlantingSchedule" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Planting Schedule">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="sidebar_userSettings_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToUserSettings" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="User Settings">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="sidebar_reports_btn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goToReports" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Reports">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" prefHeight="768.0" prefWidth="1066.0">
+         <children>
+            <AnchorPane fx:id="seedEntry_methodObtained" layoutX="-90.0" layoutY="-6.0" prefHeight="768.0" prefWidth="1066.0">
+               <children>
+                  <Label fx:id="plantingSchedule_header" layoutX="120.0" layoutY="33.0" prefHeight="42.0" prefWidth="360.0" text="Planting Schedule">
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="36.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="plantingSchedule_table" layoutX="125.0" layoutY="188.0" prefHeight="329.0" prefWidth="742.0">
+                     <columns>
+                        <TableColumn fx:id="entry_id_column" prefWidth="75.0" text="Entry ID" />
+                        <TableColumn fx:id="user_id_column" prefWidth="102.4000244140625" text="User ID" />
+                        <TableColumn fx:id="seed_id_column" prefWidth="75.0" text="Seed ID" />
+                        <TableColumn fx:id="entry_date_column" prefWidth="96.20001220703125" text="Entry Date" />
+                        <TableColumn fx:id="quantity_in_grams_column" prefWidth="117.39996337890625" text="Quantity (g)" />
+                        <TableColumn fx:id="method_obtained_column" prefWidth="129.79998779296875" text="Method Obtained" />
+                        <TableColumn fx:id="expiry_date_column" prefWidth="79.199951171875" text="Expiry Date" />
+                        <TableColumn fx:id="status_column" prefWidth="66.00006103515625" text="Status" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="PlantingSchedule_textfield" layoutX="358.0" layoutY="125.0" />
+                  <Button fx:id="Display" layoutX="533.0" layoutY="125.0" mnemonicParsing="false" onAction="#searchItems" text="Display" />
+                  <Label layoutX="125.0" layoutY="129.0" text="Please enter the month for the schedule:" />
+                  <Button fx:id="Planted_Button" layoutX="120.0" layoutY="541.0" mnemonicParsing="false" onAction="#markAsPlanted" prefHeight="26.0" prefWidth="200.0" text="Mark as Planted" textFill="WHITE" style="-fx-background-color: #00BFFF;"/>
+                  <Button fx:id="Wasted_Button" layoutX="380.0" layoutY="541.0" mnemonicParsing="false" onAction="#markAsWasted" prefHeight="26.0" prefWidth="200.0" text="Mark as Wasted" textFill="WHITE" style="-fx-background-color: #00BFFF;"/>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
